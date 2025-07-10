@@ -15,7 +15,6 @@ def parse_args():
     args.add_argument('--fd_round', type=int, default=0) 
     args.add_argument('--re_round', type=int, default=0) 
  
-    args.add_argument('--critic_type', type=str, default='each', choices=['all', 'each'])
     args.add_argument('--mode', type=str, default='eval', choices=['eval', 'generate'])
     args.add_argument('--subject', type=str, default="PubMedQA", choices=["PubMedQA"])
 
