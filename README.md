@@ -11,4 +11,15 @@
 
 ## SiriuS: Self-improving Multi-agent Systems via Bootstrapped Reasoning
 
-Coming Soon!!
+* Problem-Solving
+* Actor-Critic
+* Competitive
+
+```bibtex
+@article{zhao2025sirius,
+  title={SiriuS: Self-improving Multi-agent Systems via Bootstrapped Reasoning},
+  author={Zhao, Wanjia and Yuksekgonul, Mert and Wu, Shirley and Zou, James},
+  journal={arXiv preprint arXiv:2502.04780},
+  year={2025}
+}
+```
