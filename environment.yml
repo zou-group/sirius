@@ -1,0 +1,49 @@
+name: sirius
+channels:
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h6c40b1e_6
+  - ca-certificates=2025.7.15=hecd8cb5_0
+  - expat=2.7.1=h6d0c2b6_0
+  - libcxx=19.1.7=haebbb44_3
+  - libffi=3.4.4=hecd8cb5_1
+  - ncurses=6.5=h923df54_0
+  - openssl=3.0.17=hee2dfae_0
+  - pip=25.3=pyhc872135_0
+  - python=3.10.18=hc958d9f_0
+  - readline=8.3=h49f2429_0
+  - setuptools=78.1.1=py310hecd8cb5_0
+  - sqlite=3.50.2=hc8b0dd6_1
+  - tk=8.6.15=h3a5a201_0
+  - wheel=0.45.1=py310hecd8cb5_0
+  - xz=5.6.4=h46256e1_1
+  - zlib=1.2.13=h4b97444_1
+  - pip:
+    - annotated-types==0.7.0
+    - antlr4-python3-runtime==4.7.2
+    - anyio==4.12.0
+    - certifi==2025.11.12
+    - distro==1.9.0
+    - exceptiongroup==1.3.1
+    - h11==0.16.0
+    - httpcore==1.0.9
+    - httpx==0.28.1
+    - idna==3.11
+    - jiter==0.12.0
+    - latex2sympy2==1.9.1
+    - mpmath==1.3.0
+    - numpy==2.2.6
+    - openai==2.8.1
+    - pandas==2.3.3
+    - pydantic==2.12.5
+    - pydantic-core==2.41.5
+    - python-dateutil==2.9.0.post0
+    - pytz==2025.2
+    - six==1.17.0
+    - sniffio==1.3.1
+    - sympy==1.14.0
+    - tqdm==4.67.1
+    - typing-extensions==4.15.0
+    - typing-inspection==0.4.2
+    - tzdata==2025.2
+prefix: /Users/zwj/opt/anaconda3/envs/sirius

@@ -42,10 +42,10 @@ def load_dataset(args):
     subject = args.subject
     # file_path = f"dataset/{args.task}.jsonl"
     if args.mode == "eval":
-        file_path=f"/Users/zwj/multi-agent-alignment/dataset/combined_{subject}_test.jsonl"
+        file_path=f"dataset/{subject}_test.jsonl"
         print(file_path)
     if args.mode == "generate":
-        file_path=f"/Users/zwj/multi-agent-alignment/dataset/combined_{subject}_train.jsonl"
+        file_path=f"dataset/{subject}_train.jsonl"
     
     datas=load_jsonl_objects(file_path)
    

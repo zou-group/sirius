@@ -51,8 +51,8 @@ def generate_critic_feedback(info, args, critic_agent, received_agent):
 def get_feedback(args, critic_agent, received_agent):
     print(f"ft_round: {args.ft_round} | sol_round: {args.sol_round} | fd_round: {args.fd_round} | re_round: {args.re_round}")
 
-    inputfile = ""  
-    feedback_file = "" 
+    inputfile = "Problem_solving/PhyChem/logs/solve_phy_gpt-3.5-turbo/wrong/wrong.jsonl"
+    feedback_file = f"Problem_solving/PhyChem/logs/solve_phy_gpt-3.5-turbo/feedback.jsonl" 
     os.makedirs(os.path.dirname(feedback_file), exist_ok=True)
 
     input_logs = load_jsonl_objects(inputfile)
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     print(args)
 
     start_time = datetime.datetime.now()
-    feedback_file = get_feedback(args, critic_agent, received_agent="agent_3")
+    feedback_file = get_feedback(args, critic_agent, received_agent="agent_1")
     end_time = datetime.datetime.now()
 
     print(f"Feedback written to: {feedback_file}")

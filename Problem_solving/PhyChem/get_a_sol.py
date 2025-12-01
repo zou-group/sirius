@@ -124,11 +124,11 @@ if __name__ == '__main__':
     start = datetime.datetime.now()
     input_data = load_dataset(args)
 
-    num_processes = min(64, len(input_data))
+    num_processes = min(2, len(input_data))
     batches = [input_data[i::num_processes] for i in range(num_processes)]
 
    
-    log_dir = f"logs/solve_{args.subject}_{args.model}"  
+    log_dir = f"Problem_solving/PhyChem/logs/solve_{args.subject}_{args.model}"  
     os.makedirs(log_dir, exist_ok=True)
 
     manager = multiprocessing.Manager()

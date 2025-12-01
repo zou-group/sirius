@@ -17,12 +17,12 @@ def get_rephrase_response(agent, question, regenerate_response):
 
 
 def get_regenerate(args, agent_1, agent_2, agent_3, received_agent='agent_1'):
-    inputfile = "" 
-    regenerate_sol_file = f'logs/{args.subject}/{args.re_round}_regenerate_sol.jsonl'
-    regenerate_correct_file = f'logs/{args.subject}/{args.re_round}_regenerate_correct.jsonl'
-    regenerate_wrong_file = f'logs/{args.subject}/{args.re_round}_regenerate_wrong.jsonl'
+    inputfile = f"Problem_solving/PhyChem/logs/solve_{args.subject}_{args.model}/feedback.jsonl" 
+    regenerate_sol_file = f'Problem_solving/PhyChem/logs/solve_{args.subject}_{args.model}/regenerate_sol.jsonl'
+    regenerate_correct_file = f'Problem_solving/PhyChem/logs/solve_{args.subject}_{args.model}/regenerate_correct.jsonl'
+    regenerate_wrong_file = f'Problem_solving/PhyChem/logs/solve_{args.subject}_{args.model}/regenerate_wrong.jsonl'
 
-    os.makedirs(f"logs/{args.subject}/", exist_ok=True)
+    os.makedirs(f"Problem_solving/PhyChem/logs/solve_{args.subject}_{args.model}/", exist_ok=True)
 
     input_logs = load_jsonl_objects(inputfile)
     sol_logs = load_jsonl_objects(regenerate_sol_file) if os.path.exists(regenerate_sol_file) else []
